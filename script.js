@@ -1,5 +1,5 @@
 let nav = document.querySelector('#presto-navbar')
-
+let btnNav = document.querySelector('#p-nav-btn')
 
 document.addEventListener('scroll' , function(){
 
@@ -12,5 +12,11 @@ document.addEventListener('scroll' , function(){
         nav.classList.remove('p-nav-scrolled')
     }
    
+})
+
+btnNav.addEventListener('click' , function(){
+
+    btnNav.classList.toggle('open')
+
 })
 

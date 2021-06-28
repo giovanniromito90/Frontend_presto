@@ -6,7 +6,7 @@
     --white : #f9f9fb;
     --dark : #161214;
     --secondary : #c0b9c3;
-    --secondary-tr : #c0b9c354;
+    --secondary-tr : #c0b9c38e;
     --primary : #5a4bb5;
     --primary-dark : #3c23b7;
 }
@@ -14,14 +14,25 @@
 .presto-nav {
     background-color: transparent;
     transition: all 0.8s;
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(5px);
     padding: 0px;
+
  
 }
 
 .presto-nav .nav-link {
     color: var(--dark);
     transition: all 0.8s;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    margin-left: 8px;
+}
+
+.presto-nav .nav-link:hover {
+    color: var(--primary);
+    transition: all 0.8s;
+    border-bottom: 3px solid var(--primary);
+    transform: scale(1.1);
 }
 
 .presto-nav .navbar-brand{
@@ -31,22 +42,39 @@
 
 .presto-nav .p-nav-scrolled {
     background-color: var(--secondary-tr);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
 }
 
 .presto-nav .p-nav-scrolled .nav-link {
     color: var(--white);
 }
 
-
-
-
-
-
-
-
-
-body{
-    height: 1800px;
-    background-image: url('https://picsum.photos/1920/1080');
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--white);
+    margin-left: 3px;
 }
+
+.btn-primary:hover{
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
+#p-nav-btn{
+    transition: all 0.35s;
+}
+
+#p-nav-btn:focus{
+    box-shadow: none;
+}
+
+#p-nav-btn.open{
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
