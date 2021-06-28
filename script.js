@@ -4,7 +4,6 @@ let btnNav = document.querySelector('#p-nav-btn')
 document.addEventListener('scroll' , function(){
 
 
-
     if(window.scrollY > 400){
         nav.classList.add('p-nav-scrolled')
 

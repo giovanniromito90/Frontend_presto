@@ -84,7 +84,7 @@
     background-position: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .masthead1 {
       background-image: none;
       height: 30vh;
