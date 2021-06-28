@@ -11,6 +11,10 @@
     --primary-dark : #3c23b7;
 }
 
+.tc-primary-dark{
+    color: var(--primary-dark);
+}
+
 .presto-nav {
     background-color: transparent;
     transition: all 0.8s;
@@ -21,7 +25,7 @@
 }
 
 .presto-nav .nav-link {
-    color: var(--dark);
+    color: var(--white);
     transition: all 0.8s;
     font-weight: 600;
     border-bottom: 3px solid transparent;
@@ -49,13 +53,13 @@
     color: var(--white);
 }
 
-.btn-primary{
-    background-color: var(--primary);
+.btn-primary1{
+    background-color: var(--primary) ;
     color: var(--white);
     margin-left: 3px;
 }
 
-.btn-primary:hover{
+.btn-primary1:hover{
     background-color: var(--primary-dark);
     color: var(--white);
 }
@@ -71,6 +75,30 @@
 #p-nav-btn.open{
     transform: rotate(90deg);
 }
+
+.masthead1 {
+    background-image: url('./img/foto ecommerce (3).jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.p-card-border {
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 1px 26px -4px rgba(0, 0, 0, 0.226); 
+    box-shadow: 2px 1px 26px -4px rgba(0, 0, 0, 0.239);
+    transition: all 0.3s;
+
+ }
+
+ .p-card-border:hover {
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 1px 26px -4px rgba(0, 0, 0, 0.589); 
+    box-shadow: 2px 1px 26px -4px rgba(0, 0, 0, 0.774);
+
+ }
 
 
 
