@@ -84,6 +84,16 @@
     background-position: center;
 }
 
+@media screen and (max-width: 500px) {
+    .masthead1 {
+      background-image: none;
+      height: 30vh;
+    }
+    .presto-nav .nav-link {
+        color: var(--primary-dark);
+    }
+  }
+
 
 .p-card-border {
     border-radius: 25px;
