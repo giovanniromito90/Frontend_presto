@@ -139,12 +139,17 @@
       new Glide('.glide', {
         type: 'carousel',
         focusAt : 'center',
-        perView: 3 , 
+        perView: 4 , 
         gap : 50, 
         breakpoints : {
         500: {
-          perView: 1
-          }
+          perView: 1,
+          },
+
+        800: {
+          perView: 2,
+          },
+          
         }
       })
       .mount()

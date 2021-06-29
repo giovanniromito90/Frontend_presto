@@ -58,37 +58,39 @@ function creaCard(){
 creaCard()
 
 // CAROSELLO 
+function carosello(){
 
-let wrapper = document.querySelector("#last-ads-carousel")
-
-let ads = [
-    {titolo : 'Motori' , category :'audi Q3', prezzo :'5000'},
-    {titolo : 'Immobile' , category :'Trilocale', prezzo :'5000'},
-    {titolo : 'Lavoro' , category :'Imbianchino', prezzo :'5000'},
-    {titolo : 'Arredamento' , category :'Divano', prezzo :'5000'},
-    {titolo : 'Abbigliamento' , category :'T-shirt', prezzo :'5000'},
-    {titolo : 'Elettronica' , category :'Iphone', prezzo :'5000'},
-]
-
-ads.forEach(ad => {
-    let li = document.createElement("li");
-
-    li.classList.add("glide__slide");
+    let wrapper = document.querySelector("#last-ads-carousel")
     
-    li.innerHTML =  ` 
-            <div class="card" style="height: 29rem; width: 20rem;">
-            <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
-            <div class="card-body">
-            <h5 class="card-title">${ad.titolo}</h5>
-            <div class="d-flex justify-content-between">
-            <p class="card-text">${ad.prezzo} $</p>
-            <p class="card-text me-2">${ad.category}</p>
-            </div>
-            <a href="#" class="btn btn-primary1 rounded-pill ">Vai all'annuncio</a>
-            </div>
-            </div>
+    let ads = [
+        {titolo : 'Motori' , category :'audi Q3', prezzo :'5000'},
+        {titolo : 'Immobile' , category :'Trilocale', prezzo :'5000'},
+        {titolo : 'Lavoro' , category :'Imbianchino', prezzo :'5000'},
+        {titolo : 'Arredamento' , category :'Divano', prezzo :'5000'},
+        {titolo : 'Abbigliamento' , category :'T-shirt', prezzo :'5000'},
+        {titolo : 'Elettronica' , category :'Iphone', prezzo :'5000'},
+    ]
     
-    ` 
-    wrapper.appendChild(li);
-})
-
+    ads.forEach(ad => {
+        let li = document.createElement("li");
+    
+        li.classList.add("glide__slide");
+        
+        li.innerHTML =  ` 
+                <div class="card" style="height: 29rem; width: 20rem;">
+                <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">${ad.titolo}</h5>
+                <div class="d-flex justify-content-between">
+                <p class="card-text">${ad.prezzo} $</p>
+                <p class="card-text me-2">${ad.category}</p>
+                </div>
+                <a href="#" class="btn btn-primary1 rounded-pill ">Vai all'annuncio</a>
+                </div>
+                </div>
+        
+        ` 
+        wrapper.appendChild(li);
+    })
+}
+carosello()
