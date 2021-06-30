@@ -127,4 +127,27 @@
     background-position: center;
     margin-bottom: 50px;
 }
+
+.btn-like {
+    background-color: var(--secondary-tr);
+    color:rgba(120, 10, 247, 0.973);
+    font-size: large;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.btn-like:hover {
+    transition: all 0.5s;
+    background-color: var(--secondary);
+    color:rgba(120, 10, 247, 0.973);
+    opacity: 1;
+
+}
+
+.btn-like.active {
+    opacity: 1;
+}
  

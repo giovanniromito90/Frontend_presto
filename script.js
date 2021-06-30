@@ -79,6 +79,7 @@ function carosello(){
         li.innerHTML =  ` 
                 <div class="card" style="height: 29rem; width: 20rem;">
                 <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                <button class="btn btn-like"><i class="far fa-thumbs-up"></></button>
                 <div class="card-body">
                 <h5 class="card-title">${ad.titolo}</h5>
                 <div class="d-flex justify-content-between">
@@ -92,5 +93,45 @@ function carosello(){
         ` 
         wrapper.appendChild(li);
     })
+
+    let likes = document.querySelectorAll('.btn-like')
+
+ likes.forEach(btn => {
+   btn.addEventListener('click', () => {
+     btn.classList.toggle('active')
+     btn.children[0].classList.toggle('far')
+     btn.children[0].classList.toggle('fas')
+    })
+ }) 
+
 }
 carosello()
+
+// fetch('./2021-04-29-js-live-coding-pt2.json')
+// .then(data=> data.json())
+// .then(data=>{
+
+//   function populateAds(data){
+//       let wrapperAnn = document.querySelector
+//         ('#ads-wrapper')
+//         wrapperAnn.innerHTML = ''
+//         // console.log(data);
+
+//          data.forEach( ad=> {
+//            let cardAnn = document.createElement('div')
+
+//            cardAnn.classList.add('col-10' , 'col-sm-6' , 'col-xl-4')
+
+//            cardAnn.innerHTML = 
+//            `
+//            <div class="p-card-ads mt-4 m-0 text-center"><a href = "./ad.html?${ad.id}" class="text-annunci">
+//            <img class="img-fluid rounded-img" src="https://picsum.photos/id/1/410/330">
+//            <h2 class="fs-5 pt-3">${ad.name}</h2>
+//            <p class="fs-5">${ad.category}</p>
+//            <p class="fs-5">${ad.price} $</p>
+//            </a></div> 
+//            ` 
+
+//            wrapperAnn.appendChild(cardAnn)
+//          })
+//   }
