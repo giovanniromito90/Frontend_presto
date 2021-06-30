@@ -79,7 +79,7 @@ function carosello(){
         li.innerHTML =  ` 
                 <div class="card" style="height: 29rem; width: 20rem;">
                 <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
-                <button class="btn btn-like"><i class="far fa-thumbs-up"></></button>
+                <button class="btn btn-like"><i class="far fa-thumbs-up"></i></button>
                 <div class="card-body">
                 <h5 class="card-title">${ad.titolo}</h5>
                 <div class="d-flex justify-content-between">
@@ -96,8 +96,8 @@ function carosello(){
 
     let likes = document.querySelectorAll('.btn-like')
 
- likes.forEach(btn => {
-   btn.addEventListener('click', () => {
+    likes.forEach(btn => {
+    btn.addEventListener('click', () => {
      btn.classList.toggle('active')
      btn.children[0].classList.toggle('far')
      btn.children[0].classList.toggle('fas')

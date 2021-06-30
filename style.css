@@ -120,7 +120,7 @@
 }
 
 .masthead2 {
-    background-image: url('https://www.onangel.it/wp-content/uploads/2018/02/immagini-gratis-per-blog-aziendale.jpg');
+    background-image: url('https://images.unsplash.com/photo-1591030434469-3d78c7b17820?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=889&q=80');
     height: 70vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,20 +129,23 @@
 }
 
 .btn-like {
-    background-color: var(--secondary-tr);
-    color:rgba(120, 10, 247, 0.973);
+    background-color: rgba(255, 255, 255, 0.884);
+    color: var(--primary-dark);
     font-size: large;
     position: absolute;
     right: 20px;
     top: 20px;
     transition: all 0.5s;
     opacity: 0;
+    border-radius: 15px;
+    border-color: white;
+   
 }
 
 .btn-like:hover {
     transition: all 0.5s;
     background-color: var(--secondary);
-    color:rgba(120, 10, 247, 0.973);
+    color: var(--primary-dark);
     opacity: 1;
 
 }
@@ -150,4 +153,64 @@
 .btn-like.active {
     opacity: 1;
 }
- 
+
+/* Footer  */
+
+ul,li{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style-type:none;
+}
+
+
+
+footer { background-color:#0c1a1e; min-height:350px; font-family: 'Open Sans', sans-serif; }
+.footer-col { margin-top:50px; }
+.logofooter { margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;}
+
+.footer-col p { color:#fff; font-size:12px; font-family: 'Open Sans', sans-serif; margin-bottom:15px;}
+.footer-col p i { width:20px; color:#999;}
+
+.footer-ul { list-style-type:none;  padding-left:0; margin-left:2px;}
+.footer-ul li { line-height:29px; font-size:12px;}
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul i { margin-right:10px;}
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
+
+ .copyright { min-height:40px; background-color:#000000;}
+ .copyright p { color:#FFF; padding:10px 0; margin-bottom:0;}
+ .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p { font-size:12px; color:#FFF; line-height:20px;}
+ .post p span { display:block; color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
+.social-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 7px;
+    border-radius: 50%;
+}
+ .footer-social li{
+     float:left;
+ }
+ .linked-in{
+     background-color:#007bb6;
+ }
+ .facebook{
+     background-color:#3b5998;
+ }
+ .twitter{
+     background-color:#1da1f2;
+ }
+ .google{
+     background-color:#f63e28;
+ }
